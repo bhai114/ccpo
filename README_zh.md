@@ -2,9 +2,7 @@
 
 [**English README**](README.md)
 
-<p align="center">
-  <img src="assets/demo.png" width="100%" alt="概览"/>
-</p>
+
 
 协作式多智能体大语言模型（LLM）能够通过角色分解和多样化假设聚合来解决复杂的推理任务。然而，此类系统的强化学习（RL）训练常常受到信用分配问题的困扰：共享的全局奖励掩盖了个体贡献，导致更新方差增大并助长"搭便车"现象。我们提出了**反事实信用策略优化（Counterfactual Credit Policy Optimization, CCPO）**，一个通过反事实轨迹估计每个智能体边际贡献来分配个体学习信号的框架。CCPO 构建动态反事实基线，模拟移除某个智能体贡献后的结果，从而产生角色敏感的优势函数用于策略优化。为了进一步提升在异质任务和数据分布下的稳定性，我们提出了一种**全局历史感知归一化方案**，利用全局采样统计量校准优势函数。我们在两种协作拓扑上评估了 CCPO：顺序式 Think-Reason 二元组和多智能体投票。在数学和逻辑推理基准测试中，CCPO 有效缓解了搭便车现象，并优于强多智能体 RL 基线，实现了更精细、更有效的协作 LLM 训练信用分配。
 
@@ -14,15 +12,7 @@
   <img src="assets/framework.png" width="100%" alt="反事实信用分配框架"/>
 </p>
 
-<p align="center">
-  <img src="assets/train.png" width="100%" alt="训练框架"/>
-</p>
 
-## 实验结果
-
-<p align="center">
-  <img src="assets/results.png" width="100%" alt="主要结果"/>
-</p>
 
 ## 项目结构
 

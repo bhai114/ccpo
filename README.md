@@ -2,9 +2,7 @@
 
 [**中文版 README**](README_zh.md)
 
-<p align="center">
-  <img src="assets/demo.png" width="100%" alt="Overview"/>
-</p>
+
 
 Collaborative multi-agent large language models (LLMs) can solve complex reasoning tasks by decomposing roles and aggregating diverse hypotheses. Yet, reinforcement learning (RL) for such systems is often undermined by credit assignment: a shared global reward obscures individual contributions, inflating update variance and encouraging free-riding. We introduce **Counterfactual Credit Policy Optimization (CCPO)**, a framework that assigns agent-specific learning signals by estimating each agent's marginal contribution through counterfactual trajectories. CCPO builds dynamic counterfactual baselines that simulate outcomes with an agent's contribution removed, yielding role-sensitive advantages for policy optimization. To further improve stability under heterogeneous tasks and data distributions, we propose a **global-history-aware normalization** scheme that calibrates advantages using global rollout statistics. We evaluate CCPO on two collaboration topologies: a sequential Think–Reason dyad and multi-agent voting. Across mathematical and logical reasoning benchmarks, CCPO mitigates free-riding and outperforms strong multi-agent RL baselines, yielding finer-grained and more effective credit assignment for collaborative LLM training.
 
@@ -14,15 +12,7 @@ Collaborative multi-agent large language models (LLMs) can solve complex reasoni
   <img src="assets/framework.png" width="100%" alt="Counterfactual Credit Allocation Framework"/>
 </p>
 
-<p align="center">
-  <img src="assets/train.png" width="100%" alt="Training Framework"/>
-</p>
 
-## Results
-
-<p align="center">
-  <img src="assets/results.png" width="100%" alt="Main Results"/>
-</p>
 
 ## Project Structure
 
